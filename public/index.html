@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Linktree - Fahrul</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -27,7 +32,7 @@
         
         <div class="relative mb-4 md:mb-6">
             <div class="w-24 h-24 md:w-32 md:h-32 rounded-full p-1 bg-gradient-to-tr from-purple-500 via-pink-500 to-yellow-500 hover:rotate-[360deg] transition-transform duration-1000 shadow-xl cursor-pointer">
-                <img src="./media/profile.jpg" alt="Profile Fahrul" class="w-full h-full rounded-full border-4 border-white dark:border-gray-900 object-cover">
+                <img src="./media/profile.jpg" alt="Profile Fahrul" class="w-full h-full rounded-full border-4 border-white dark:border-gray-900 object-cover" onerror="this.src='https://ui-avatars.com/api/?name=Fahrul&background=random&color=fff&size=128'">
             </div>
         </div>
         
