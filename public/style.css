@@ -1,22 +1,36 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p, h1, .username {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
 body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .animate-item {
     opacity: 0;
-}
-
-.animate-fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.animate-blob {
-    animation: blob 7s infinite;
 }
 
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
 
 .animation-delay-2000 {
     animation-delay: 2s;
@@ -59,4 +73,13 @@ body {
     100% {
         transform: translate(0px, 0px) scale(1);
     }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
 }
